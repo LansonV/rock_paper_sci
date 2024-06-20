@@ -1,3 +1,14 @@
+const container = document.querySelecter("#container")
+
+const rockButton = 
+
+rockButton.addEventListener('click', () => {
+    const computerSelection = computerPlay()
+    const playerSelection = 'ROCK'
+    playRound(playerSelection, computerSelection)
+})
+
+
 let humanScore = 0;
 let computerScore = 0;
 
@@ -89,5 +100,6 @@ function playGame(games) {
         console.log(humanScore);
         console.log(computerScore);
     }
+    document.querySelector("button").textContent = "Play New Game"
     console.log("Game Over!")
 }
